@@ -1,0 +1,147 @@
+@import "https://nyri4.github.io/donators/donators.css";
+@import "https://fonts.googleapis.com/css2?family=Nunito";
+
+:root {
+    --border-radius: 12px;
+    --background-primary: #3e2723;
+    --background-secondary: #5d4037;
+    --background-secondary-alt: #795548;
+    --background-tertiary: #4e342e;
+    --background-accent: #ffccbc;
+    --text-normal: #ffffff;
+    --text-muted: #d7ccc8;
+    --header-primary: #ffab91;
+}
+
+/* Général */
+.chatLayerWrapper {
+    position: fixed;
+    top: 260px;
+    bottom: 100px;
+    right: 50px;
+    width: 340px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-primary);
+    padding-bottom: 24px;
+    overflow: visible;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Messages */
+.message-content {
+    background: var(--background-secondary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.spoilerText {
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+
+.spoilerText:hover {
+    background-color: var(--background-tertiary);
+}
+
+/* Boutons */
+.button,
+.vc-chatbar-button {
+    border-radius: var(--border-radius);
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--background-secondary-alt);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-accent);
+    border-radius: var(--border-radius);
+}
+
+/* Réactions */
+.reactions-container {
+    border-radius: var(--border-radius);
+    background: var(--background-tertiary);
+    padding: 6px;
+}
+
+.reaction-selected {
+    background-color: rgba(255, 204, 188, 0.2);
+}
+
+/* Divers */
+.embedFull {
+    border: none;
+    margin-left: 12px;
+    border-radius: var(--border-radius);
+}
+
+.audioControls {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    background-color: var(--background-secondary-alt);
+}
+
+.invite {
+    background-color: var(--background-secondary);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 8px 12px;
+}
+
+/* Membre List */
+.member-list {
+    background: var(--background-tertiary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.member-list .member {
+    background: var(--background-secondary);
+    border-radius: var(--border-radius);
+    padding: 6px 10px;
+    margin: 5px 0;
+}
+
+.member-list .member:hover {
+    background: var(--background-secondary-alt);
+}
+
+/* Compléments et corrections */
+.guilds-container {
+    padding: 10px 0 140px 0;
+}
+
+.wrapper:hover {
+    border-radius: calc(var(--border-radius) - 4px);
+}
+
+.folderIconWrapper {
+    background-color: rgba(0,0,0,0);
+}
+
+.circleIconButton {
+    color: var(--background-accent);
+    background-color: var(--background-secondary-alt) !important;
+    border-radius: 50%;
+}
+
+.theme-light .wrapper.selected .childWrapper,
+.theme-light .wrapper:hover .childWrapper {
+    background-color: var(--text-normal);
+}
+
+.theme-dark .wrapper.selected .childWrapper,
+.theme-dark .wrapper:hover .childWrapper {
+    background-color: var(--background-primary);
+}
